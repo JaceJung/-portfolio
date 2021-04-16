@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jace's Portfolio</title>
+    <meta name="discription" content="Portfolio for software engineer Jace" />
+    <meta name="author" content="Jace" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/1edd01b706.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <body>
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-code"></i>
+        <a href="#">Jace</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonial
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+
+      <!-- Navbar Toggle Button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <section id="home" class="section">
+      <div class="home__container">
+        <img
+          src="imgs/profile.jpg"
+          alt="Jace's profile photo"
+          class="home__avatar"
+        />
+      </div>
+      <h1 class="home__title">
+        Hello, <br />
+        I'm Full Stack Coder
+      </h1>
+      <h2 class="home__description">
+        A Software Engineer currently working in Seoul, Korea
+      </h2>
+      <button class="home__contact" data-link="#contact">Contact Me</button>
+    </section>
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        Elit ea qui proident sint sit occaecat pariatur excepteur excepteur. Qui
+        amet cupidatat sit ex ex est ut dolor ea dolor. Id eiusmod cupidatat
+        esse amet do tempor esse id. Enim in aliquip et duis tempor labore in
+        enim. Incididunt amet aliquip ut magna exercitation Lorem. Commodo
+        proident commodo occaecat magna laboris irure do aliquip ad aute mollit
+        consequat elit enim.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">HTML, CSS, JavaScript, React</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <div class="major__description">IONIC, FLUTTER</div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">Java, Spring, Rest APIs</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img class="job__logo" src="imgs/kreri_logo.jpg" />
+          <div class="job__description">
+            <p class="job__name">Seoul Electron as Software Engineer</p>
+            <p class="job__period">2002. 3 ~ 2003. 10</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <img class="job__logo" src="imgs/kreri_logo.jpg" />
+          <div class="job__description">
+            <p class="job__name">
+              Korea Real Estate Research Institute as Software Engineer
+            </p>
+            <p class="job__period">2003.11 ~ 2019. 8</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Non quis nisi incididunt culpa proident id sunt aute. Lorem cupidatat
+          veniam excepteur sunt irure culpa in sit sint nulla dolore laboris. Id
+          non qui ut fugiat Lorem occaecat et excepteur velit do.
+        </p>
+
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>HTML</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>JAVASCRIPT</span>
+                <span>75%</span>
+              </div>
+
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>REACT</span>
+                <span>65%</span>
+              </div>
+
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>JAVA</span>
+                <span>95%</span>
+              </div>
+
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>PYTHON</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__discription">
+                <span>Node.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Stdio Code</span></li>
+                <li><span>Eclipse</span></li>
+                <li><span>Android development tool</span></li>
+                <li><span>IOS development tool</span></li>
+                <li><span>Npm & Yarn</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Statistics</span></li>
+                <li><span></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My Work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">8</span>
+          </button>
+          <button class="category__btn" data-filter="frontEnd">
+            Front-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            Mobile<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="backEnd">
+            Back-end<span class="category__count">2</span>
+          </button>
+        </div>
+
+        <div class="work__projects">
+          <a href="" class="project" data-type="frontEnd" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project1.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/JaceJung/card-maker"
+            class="project"
+            data-type="frontEnd"
+            target="_blank"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project2.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Card-Maker</h3>
+              <span>Card-Maker with React and CSS</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/JaceJung/react_basic_habit_tracker"
+            class="project"
+            data-type="frontEnd"
+            target="_blank"
+          >
+            <img
+              class="project__img"
+              src="imgs/projects/project3.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Habit_tracker</h3>
+              <span>Habit_tracker with React and CSS</span>
+            </div>
+          </a>
+
+          <a href="" class="project" data-type="mobile" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project4.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Mobile App</h3>
+              <span>KRERI repot mobile app with IONIC and REST APIs</span>
+            </div>
+          </a>
+
+          <a href="" class="project" data-type="mobile" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project5.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+
+          <a href="" class="project" data-type="mobile" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project6.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+
+          <a href="" class="project" data-type="backEnd" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project7.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+
+          <a href="" class="project" data-type="backEnd" target="_blank">
+            <img
+              class="project__img"
+              src="imgs/projects/project8.png"
+              alt="Youtube"
+            />
+            <div class="project__description">
+              <h3>Youtube Site</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/profile.jpg"
+              alt="people"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Aliqua adipisicing magna veniam adipisicing minim proident
+                reprehenderit ea cupidatat et exercitation proident non.
+                Pariatur do Lorem aute Lorem.
+              </p>
+              <p class="name"><a href="">Ellie</a> / Apple</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Aliqua adipisicing magna veniam adipisicing minim proident
+                reprehenderit ea cupidatat et exercitation proident non.
+                Pariatur do Lorem aute Lorem.
+              </p>
+              <p class="name"><a href="">Ellie</a> / Apple</p>
+            </div>
+            <img
+              src="imgs/profile.jpg"
+              alt="people"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">ksjung330@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/jace" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://github.com/jace" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2020 Jace - All rights reserved.</p>
+    </section>
+
+    <!-- Arrow Up  -->
+
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
